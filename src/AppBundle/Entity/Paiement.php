@@ -82,7 +82,7 @@ class Paiement
      *
      * @return Paiement
      */
-    public function setDatePaiement($datePaiement)
+    public function setDatePaiement(\DateTime $datePaiement)
     {
         $this->datePaiement = $datePaiement;
 
@@ -112,6 +112,13 @@ class Paiement
     public function setCommande($commande)
     {
         $this->commande = $commande;
+    }
+
+    public function __construct()
+    {
+
+        $this->datePaiement = new \DateTime() ;
+
     }
 }
 

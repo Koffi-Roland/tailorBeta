@@ -85,7 +85,7 @@ class Commande
      *
      * @return Commande
      */
-    public function setDateCommande($dateCommande)
+    public function setDateCommande(\DateTime $dateCommande)
     {
         $this->dateCommande = $dateCommande;
 
@@ -220,6 +220,13 @@ class Commande
     public function setTenue($tenue)
     {
         $this->tenue = $tenue;
+    }
+
+    public function __construct()
+    {
+
+        $this->dateCommande = new \DateTime() ;
+
     }
 }
 
