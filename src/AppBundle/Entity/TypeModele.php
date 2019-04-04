@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * TypeModele
  *
- * @ORM\Table(name="type_modele")
+ * @ORM\Table(name="SYS_type_modele")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\TypeModeleRepository")
  */
 class TypeModele

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Tenue
  *
- * @ORM\Table(name="tenue")
+ * @ORM\Table(name="SYS_tenue")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\TenueRepository")
  */
 class Tenue
